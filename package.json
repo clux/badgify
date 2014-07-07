@@ -1,0 +1,19 @@
+{
+  "name": "badgify",
+  "description": "Rebuild readme markdown badges from package.json scripts",
+  "author": "Eirik Albrigtsen <analsandblaster@gmail.com>",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "clux/badgify"
+  },
+  "keywords": ["svg", "shields", "badge", "generate"],
+  "bin": "badgify.js",
+  "dependencies": {
+    "hsb2rgb": "~1.0.2"
+  },
+  "bugs": {
+    "url": "http://github.com/clux/badgify/issues"
+  },
+  "license": "MIT"
+}
