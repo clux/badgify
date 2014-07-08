@@ -15,7 +15,7 @@ Output:
 [![Build Status](https://secure.travis-ci.org/clux/dye.svg)](http://travis-ci.org/clux/dye)
 [![Dependency Status](https://david-dm.org/clux/dye.svg)](https://david-dm.org/clux/dye)
 [![Coverage Status](http://img.shields.io/coveralls/clux/dye.svg/badge.png)](https://coveralls.io/repos/clux/dye)
-[![unstable](http://img.shields.io/badge/stability-unstable-E5AE13.svg)]((http://nodejs.org/api/documentation.html#documentation_stability_index))
+[![unstable](http://img.shields.io/badge/stability-unstable-E5AE13.svg)](http://nodejs.org/api/documentation.html#documentation_stability_index)
 ```
 
 ## How
