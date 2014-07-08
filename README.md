@@ -1,5 +1,4 @@
 # Badgify
-[![Build Status](https://secure.travis-ci.org/clux/badgify.svg)](http://travis-ci.org/clux/badgify)
 [![Dependency Status](https://david-dm.org/clux/badgify.svg)](https://david-dm.org/clux/badgify)
 [![experimental](http://img.shields.io/badge/stability-experimental-DD5F0A.svg)]((http://nodejs.org/api/documentation.html#documentation_stability_index))
 
