@@ -34,7 +34,7 @@ var col = {
   'stable': '74C614',
   'unstable': 'E5AE13'
 }[stab];
-var stabUrl = "(http://nodejs.org/api/documentation.html#documentation_stability_index)";
+var stabUrl = "http://nodejs.org/api/documentation.html#documentation_stability_index";
 var stabShield = "http://img.shields.io/badge/stability-" + stab + "-" + col + ".svg";
 badges.push("[![" + stab + "](" + stabShield + ")](" + stabUrl + ")");
 
