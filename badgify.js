@@ -22,7 +22,7 @@ badges.push("[![Dependency Status](" + davidUrl + ".svg)](" + davidUrl + ")");
 if (json.scripts && json.scripts.coveralls) {
   var covUrl = "https://coveralls.io/repos/" + ghRepo;
   var covShield = "http://img.shields.io/coveralls/" + ghRepo + ".svg";
-  badges.push("[![Coverage Status](" + covShield + "/badge.png)](" + covUrl + ")");
+  badges.push("[![Coverage Status](" + covShield + ")](" + covUrl + ")");
 }
 
 var stab = json.stability || 'experimental';
