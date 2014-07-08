@@ -7,11 +7,14 @@
     "type": "git",
     "url": "clux/badgify"
   },
-  "keywords": ["svg", "shields", "badge", "generate"],
+  "keywords": [
+    "svg",
+    "shields",
+    "badge",
+    "generate"
+  ],
   "bin": "badgify.js",
-  "dependencies": {
-    "hsb2rgb": "~1.0.2"
-  },
+  "dependencies": {},
   "bugs": {
     "url": "http://github.com/clux/badgify/issues"
   },

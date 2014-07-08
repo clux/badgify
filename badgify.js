@@ -1,8 +1,9 @@
 #!/usr/bin/env node
-var hsb2rgb = require('hsb2rgb');
 var coverageColor = function (c) {
-  var h = Math.floor(120*c/100);
-  return hsb2rgb(h, 0xFF, 0xFF).map(function (v) {
+  var r = Math.floor(0xFF * Math.sqrt(Math.cos(c*Math.PI/200)));
+  var g = Math.floor(0xFF * Math.sqrt(Math.sin(c*Math.PI/200)));
+  var b = 0;
+  return [r,g,b].map(function (v) {
     return (v.toString(16) + '0').slice(0, 2);
   }).join('');
 };
@@ -12,7 +13,7 @@ var repo = 'subset';
 
 // need to define or produce these somehow
 var stability = 'stable';
-var coverage = 100;
+var coverage = 70;
 
 
 var travisUrl = "travis-ci.org/" + user + "/" + repo;
@@ -33,11 +34,14 @@ var stabUrl = "(http://nodejs.org/api/documentation.html#documentation_stability
 var stabShield = "http://img.shields.io/badge/stability-" + stability + "-" + stabilityColors[stability] + ".svg";
 var stab = "[![" + stability + "](" + stabShield + ")](" + stabUrl + ")";
 
-var covShield = "http://img.shields.io/badge/coverage-";
-covShield += coverage + "%-" + coverageColor(coverage) + ".svg";
-var covUrl = "https://github.com/substack/covert"; // TODO: covert output?
-var cov = "[![coverage](" + covShield + ")](" + covUrl + ")";
+var makeCoverageShield = function (c) {
+  var covShield = "http://img.shields.io/badge/coverage-";
+  covShield += c + "%-" + coverageColor(c) + ".svg";
+  var covUrl = "https://github.com/substack/covert"; // TODO: covert output?
+  var cov = "[![coverage](" + covShield + ")](" + covUrl + ")";
+  return cov;
+}
 
 
-var res = [travis, david, stab, cov];
+var res = [travis, david, stab, makeCoverageShield(coverage)];
 console.log(res.join('\n'));
