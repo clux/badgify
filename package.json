@@ -13,10 +13,11 @@
     "badge",
     "generate"
   ],
-  "bin": "badgify.js",
+  "main": "index.js",
+  "bin": "lib/badgify.js",
   "scripts": {
     "test": "$(npm bin)/nodeunit test/*.js",
-    "coveralls": "$(npm bin)/jscoverage lib && DYE_COV=1 $(npm bin)/nodeunit --reporter=lcov test | $(npm bin)/coveralls"
+    "coveralls": "$(npm bin)/jscoverage lib && BADGIFY_COV=1 $(npm bin)/nodeunit --reporter=lcov test | $(npm bin)/coveralls"
   },
   "dependencies": {},
   "devDependencies": {
