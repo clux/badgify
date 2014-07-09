@@ -1,6 +1,10 @@
 # Badgify
+[![Build Status](https://secure.travis-ci.org/clux/badgify.svg)](http://travis-ci.org/clux/badgify)
 [![Dependency Status](https://david-dm.org/clux/badgify.svg)](https://david-dm.org/clux/badgify)
+[![Coverage Status](http://img.shields.io/coveralls/clux/badgify.svg)](https://coveralls.io/repos/clux/badgify)
 [![experimental](http://img.shields.io/badge/stability-experimental-DD5F0A.svg)](http://nodejs.org/api/documentation.html#documentation_stability_index)
+
+This package will generate stable links and markdown syntax for travis, david, coveralls & stability badge svgs so you can easily paste them to your readme.
 
 ## Usage
 Install and use in a package root

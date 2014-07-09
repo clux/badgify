@@ -1,0 +1,15 @@
+{
+  "name": "test",
+  "version": "0.0.0",
+  "description": "Boo",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "blah/woo"
+  },
+  "scripts": {
+    "coveralls": "echo \"\" | coveralls"
+  },
+  "author": "blah",
+  "stability": "stable"
+}

@@ -14,7 +14,16 @@
     "generate"
   ],
   "bin": "badgify.js",
+  "scripts": {
+    "test": "$(npm bin)/nodeunit test/*.js",
+    "coveralls": "$(npm bin)/jscoverage lib && DYE_COV=1 $(npm bin)/nodeunit --reporter=lcov test | $(npm bin)/coveralls"
+  },
   "dependencies": {},
+  "devDependencies": {
+    "nodeunit": "~0.9.0",
+    "jscoverage": "~0.5.4",
+    "coveralls": "~2.11.1"
+  },
   "bugs": {
     "url": "http://github.com/clux/badgify/issues"
   },
