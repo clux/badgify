@@ -4,16 +4,18 @@ module.exports = {
   setUp: function (cb) {
     var that = this;
     cp.exec('cd ' + __dirname + ' && badgify', function (err, stdout, stderr) {
-      if (err) {
-        t.expect(false);
+      if (err) {        
         process.stdout.write(err, stderr);
       }
       that.output = stdout;
+      that.err = stderr;
       cb(); // setup done
     });
   },
   output: function (t) {
     var out = this.output.split('\n');
+    t.equals(__dirname, "wtf")
+    t.equals(this.err, "arst");
     t.equals(out.length, 4+1);
 
     t.equals(out[0], "[![Build Status](https://secure.travis-ci.org/blah/woo.svg)](http://travis-ci.org/blah/woo)");
