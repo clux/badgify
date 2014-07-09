@@ -25,6 +25,7 @@
     "jscoverage": "~0.5.4",
     "coveralls": "~2.11.1"
   },
+  "stability": "unstable",
   "bugs": {
     "url": "http://github.com/clux/badgify/issues"
   },
