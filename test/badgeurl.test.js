@@ -3,7 +3,11 @@ var cp = require('child_process');
 module.exports = {
   setUp: function (cb) {
     var that = this;
-    cp.exec('cd ' + __dirname + ' && badgify', function (err, stdout) {
+    cp.exec('cd ' + __dirname + ' && badgify', function (err, stdout, stderr) {
+      if (err) {
+        t.expect(false);
+        process.stdout.write(err, stderr);
+      }
       that.output = stdout;
       cb(); // setup done
     });
