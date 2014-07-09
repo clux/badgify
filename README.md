@@ -22,7 +22,6 @@ Output:
 [![dependency status](https://david-dm.org/clux/badgify.svg)](https://david-dm.org/clux/badgify)
 [![coverage status](http://img.shields.io/coveralls/clux/badgify.svg)](https://coveralls.io/r/clux/badgify)
 [![experimental](http://img.shields.io/badge/stability-experimental-DD5F0A.svg)](http://nodejs.org/api/documentation.html#documentation_stability_index)
-
 ```
 
 ## How
