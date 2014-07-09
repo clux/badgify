@@ -4,9 +4,6 @@ module.exports = {
   setUp: function (cb) {
     var that = this;
     cp.exec('cd ' + __dirname + ' && badgify', function (err, stdout, stderr) {
-      if (err) {        
-        process.stdout.write(err, stderr);
-      }
       that.output = stdout;
       that.err = stderr;
       cb(); // setup done
