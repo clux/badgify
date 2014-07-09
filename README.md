@@ -8,7 +8,7 @@
 This package will generate stable links and markdown syntax for npm modules. In particular it outputs syntax for npm, travis, david, coveralls & stability badge svgs so you can easily paste them to your readme.
 
 ## Usage
-Install and use in a package root
+Install (with `-g` or `npm link` the install), and use in a package root:
 
 ```
 $ badgify
