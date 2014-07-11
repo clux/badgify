@@ -3,6 +3,7 @@
   "description": "Rebuild readme markdown badges from package.json scripts",
   "author": "Eirik Albrigtsen <analsandblaster@gmail.com>",
   "version": "0.2.0",
+  "stability": "unstable",
   "repository": {
     "type": "git",
     "url": "clux/badgify"
@@ -25,7 +26,6 @@
     "jscoverage": "~0.5.4",
     "coveralls": "~2.11.1"
   },
-  "stability": "unstable",
   "bugs": {
     "url": "http://github.com/clux/badgify/issues"
   },
