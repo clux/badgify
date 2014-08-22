@@ -24,16 +24,14 @@ Output:
 [![experimental](http://img.shields.io/badge/stability-experimental-DD5F0A.svg)](http://nodejs.org/api/documentation.html#documentation_stability_index)
 ```
 
+Then copy paste that to the start of your README.md. For speed you could pipe it through `xclip`.
+
 ## How
 - Will generate npm badge using the package.json `name` key
 - If your repo has the `.travis.yml` file it will generate the svg badge that links to the travis report
 - It will always generate the david-dm link for your dependencies
 - If your `package.json` has the `coveralls` script it will generate the svg badge that links to your coveralls.io report
 - Stability badge will be provided based on `stability` key in package.json or fallback to experimental
-
-
-## Future
-Maybe auto-modify the `README.md`..
 
 ## License
 MIT-Licensed. See LICENSE file for details.
