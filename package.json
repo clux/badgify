@@ -2,7 +2,7 @@
   "name": "badgify",
   "description": "Rebuild readme markdown badges from package.json scripts",
   "author": "Eirik Albrigtsen <analsandblaster@gmail.com>",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "stability": "unstable",
   "repository": {
     "type": "git",
