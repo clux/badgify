@@ -17,8 +17,9 @@
   "main": "index.js",
   "bin": "lib/badgify.js",
   "scripts": {
-    "test": "$(npm bin)/nodeunit test/*.js --reporter=verbose",
-    "coveralls": "$(npm bin)/jscoverage lib && BADGIFY_COV=1 $(npm bin)/nodeunit --reporter=lcov test | $(npm bin)/coveralls"
+    "test": "nodeunit test/*.js --reporter=verbose",
+    "coverage": "jscoverage lib && BADGIFY_COV=1 nodeunit --reporter=lcov test",
+    "coveralls": "npm run coverage | coveralls"
   },
   "dependencies": {},
   "devDependencies": {
