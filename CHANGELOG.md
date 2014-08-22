@@ -1,3 +1,7 @@
+0.2.1  / 2014-08-22
+===================
+  * Add support for long github repository.url formats in package.json - fixes #3
+
 0.2.0  / 2014-07-09
 ===================
   * Add npm badge to default output
