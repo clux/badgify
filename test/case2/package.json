@@ -1,0 +1,10 @@
+{
+  "name": "svgutils",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/throrin19/svgutils.git"
+  },
+ "scripts": {
+    "test": "exit 1"
+  }
+}
