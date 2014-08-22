@@ -1,4 +1,4 @@
-var badgify = require('../');
+var badgify = require(process.env.BADGIFY_COV ? '../badgify-cov.js' : '../');
 var join = require('path').join;
 
 exports.badgify = function (t) {

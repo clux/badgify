@@ -14,11 +14,11 @@
     "badge",
     "generate"
   ],
-  "main": "index.js",
-  "bin": "lib/badgify.js",
+  "main": "badgify.js",
+  "bin": "badgify.js",
   "scripts": {
     "test": "nodeunit test/*.js --reporter=verbose",
-    "coverage": "jscoverage lib && BADGIFY_COV=1 nodeunit --reporter=lcov test",
+    "coverage": "jscoverage badgify.js && BADGIFY_COV=1 nodeunit --reporter=lcov test",
     "coveralls": "npm run coverage | coveralls"
   },
   "dependencies": {},
