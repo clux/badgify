@@ -21,7 +21,9 @@ var generate = function (dir) {
 
   var npmShield = "http://img.shields.io/npm/v/" + npmName + ".svg";
   var npmUrl = "https://www.npmjs.org/package/" + npmName;
-  badges.push("[![npm status](" + npmShield +")](" + npmUrl + ")");
+  if (!json.private) {
+    badges.push("[![npm status](" + npmShield +")](" + npmUrl + ")");
+  }
 
   if (hasTravis) {
     var travisUrl = "travis-ci.org/" + ghRepo;
@@ -37,18 +39,20 @@ var generate = function (dir) {
     badges.push("[![coverage status](" + covShield + ")](" + covUrl + ")");
   }
 
-  var stab = (json.stability || 'experimental').toLowerCase();
-  var col = {
-    'deprecated': 'C62914',
-    'experimental': 'DD5F0A',
-    'unstable': 'E5AE13',
-    'stable': '74C614',
-    'frozen': '33C614',
-    'locked': '14C6C6'
-  }[stab];
-  var stabUrl = "http://nodejs.org/api/documentation.html#documentation_stability_index";
-  var stabShield = "http://img.shields.io/badge/stability-" + stab + "-" + col + ".svg";
-  badges.push("[![" + stab + "](" + stabShield + ")](" + stabUrl + ")");
+  if (json.stability) {
+    var stab = json.stability.toLowerCase();
+    var col = {
+      'deprecated': 'C62914',
+      'experimental': 'DD5F0A',
+      'unstable': 'E5AE13',
+      'stable': '74C614',
+      'frozen': '33C614',
+      'locked': '14C6C6'
+    }[stab];
+    var stabUrl = "http://nodejs.org/api/documentation.html#documentation_stability_index";
+    var stabShield = "http://img.shields.io/badge/stability-" + stab + "-" + col + ".svg";
+    badges.push("[![" + stab + "](" + stabShield + ")](" + stabUrl + ")");
+  }
 
   return badges;
 };

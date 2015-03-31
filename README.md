@@ -14,7 +14,7 @@ Install (with `-g` or `npm link` the install), and use in a package root:
 $ badgify
 ```
 
-Output:
+Example output (from badgify folder):
 
 ```
 [![npm status](http://img.shields.io/npm/v/badgify.svg)](https://www.npmjs.org/package/badgify)
@@ -31,7 +31,7 @@ Then copy paste that to the start of your README.md. For speed you could pipe it
 - If your repo has the `.travis.yml` file it will generate the svg badge that links to the travis report
 - It will always generate the david-dm link for your dependencies
 - If your `package.json` has the `coveralls` script it will generate the svg badge that links to your coveralls.io report
-- Stability badge will be provided based on `stability` key in package.json or fallback to experimental
+- Stability badge can be provided if you set the `stability` key in package.json
 
 ## License
 MIT-Licensed. See LICENSE file for details.

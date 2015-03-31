@@ -1,3 +1,7 @@
+0.3.0  / 2015-03-31
+===================
+  * `stability` no longer enforced (need to always set `stability` in package.json now)
+
 0.2.1  / 2014-08-22
 ===================
   * Add support for long github repository.url formats in package.json - fixes #3
