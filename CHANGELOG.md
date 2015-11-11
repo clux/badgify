@@ -1,3 +1,7 @@
+0.3.1  / 2015-11-11
+===================
+  * Documentation update
+
 0.3.0  / 2015-03-31
 ===================
   * `stability` no longer enforced (need to always set `stability` in package.json now)
