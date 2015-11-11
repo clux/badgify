@@ -1,6 +1,6 @@
-0.3.1  / 2015-11-11
+1.0.0  / 2015-11-11
 ===================
-  * Documentation update
+  * Documentation update - no real changes from 0.3.0
 
 0.3.0  / 2015-03-31
 ===================
