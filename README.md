@@ -3,7 +3,6 @@
 [![build status](https://secure.travis-ci.org/clux/badgify.svg)](http://travis-ci.org/clux/badgify)
 [![dependency status](https://david-dm.org/clux/badgify.svg)](https://david-dm.org/clux/badgify)
 [![coverage status](http://img.shields.io/coveralls/clux/badgify.svg)](https://coveralls.io/r/clux/badgify)
-[![unstable](http://img.shields.io/badge/stability-unstable-E5AE13.svg)](http://nodejs.org/api/documentation.html#documentation_stability_index)
 
 This package will generate stable links and markdown syntax for npm modules. In particular it outputs syntax for npm, travis, david, coveralls & stability badge svgs so you can easily paste them to your readme.
 
@@ -21,10 +20,14 @@ Example output (from badgify folder):
 [![build status](https://secure.travis-ci.org/clux/badgify.svg)](http://travis-ci.org/clux/badgify)
 [![dependency status](https://david-dm.org/clux/badgify.svg)](https://david-dm.org/clux/badgify)
 [![coverage status](http://img.shields.io/coveralls/clux/badgify.svg)](https://coveralls.io/r/clux/badgify)
-[![experimental](http://img.shields.io/badge/stability-experimental-DD5F0A.svg)](http://nodejs.org/api/documentation.html#documentation_stability_index)
 ```
 
-Then copy paste that to the start of your README.md. For speed you could pipe it through `xclip`.
+Then copy paste that to the start of your README.md. For speed you could pipe it through `xclip`, or just use it to generate a basic README:
+
+```sh
+echo "# $(basename "$PWD")" > README.md
+badgify >> README.md
+```
 
 ## How
 - Will generate npm badge using the package.json `name` key
