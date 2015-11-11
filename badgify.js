@@ -33,7 +33,7 @@ var generate = function (dir) {
   var davidUrl = "https://david-dm.org/" + ghRepo;
   badges.push("[![dependency status](" + davidUrl + ".svg)](" + davidUrl + ")");
 
-  if (json.scripts && json.scripts.coveralls) {
+  if (json.scripts && (json.scripts.coveralls || json.scripts.coverage)) {
     var covUrl = "https://coveralls.io/r/" + ghRepo;
     var covShield = "http://img.shields.io/coveralls/" + ghRepo + ".svg";
     badges.push("[![coverage status](" + covShield + ")](" + covUrl + ")");

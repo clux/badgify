@@ -1,3 +1,7 @@
+1.1.0  / 2015-11-11
+===================
+  * Allow `coverage` script to also be used for detecting coveralls
+
 1.0.0  / 2015-11-11
 ===================
   * Documentation update - no real changes from 0.3.0

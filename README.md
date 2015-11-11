@@ -31,9 +31,9 @@ badgify >> README.md
 
 ## How
 - Will generate npm badge using the package.json `name` key
-- If your repo has the `.travis.yml` file it will generate the svg badge that links to the travis report
+- If your repo has the `.travis.yml` file it will generate the svg badge that links to the travis build
 - It will always generate the david-dm link for your dependencies
-- If your `package.json` has the `coveralls` script it will generate the svg badge that links to your coveralls.io report
+- If your `package.json` has a `coveralls` or a `coverage` script it will generate the svg badge that links to your coveralls.io report
 - Stability badge can be provided if you set the `stability` key in package.json
 
 ## License
