@@ -25,7 +25,7 @@ Example output (from badgify folder):
 Then copy paste that to the start of your README.md. For speed you could pipe it through `xclip`, or just use it to generate a basic README:
 
 ```sh
-echo "# $(basename "$PWD")" > README.md
+echo "# $(basename $PWD)" > README.md
 badgify >> README.md
 ```
 
