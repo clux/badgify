@@ -2,7 +2,7 @@
   "name": "badgify",
   "description": "Rebuild readme markdown badges from package.json scripts",
   "author": "Eirik Albrigtsen <analsandblaster@gmail.com>",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "repository": {
     "type": "git",
     "url": "clux/badgify"
