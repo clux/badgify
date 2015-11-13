@@ -1,0 +1,35 @@
+.TH "BADGIFY" "1" "November 2015" "" ""
+.SH "NAME"
+\fBbadgify\fR
+.P
+Generate markdown badges for github readme files
+.SH SYNOPSIS
+.P
+\fBbadgify\fP
+.SH DESCRIPTION
+.P
+Reads \fBpackage\.json\fP in current directory and outputs markdown\. Requires you have a github \fBurl\fP key set\.
+.SH EXAMPLES
+.P
+Initialize a readme
+.P
+\fBbadgify > README\.md\fP
+.SH BADGES
+.P
+The badges generated depends entirely on your \fBpackage\.json\fP\|\. The following badges can be generated:
+.P
+\fBnpm\fP   Badge with npm version linking to npmjs\.org generated if package is not \fBprivate\fP\|\.
+.P
+\fBtravis\fP Build status badge linkin to travis\-ci is generated if a \fB\|\.travis\.yml\fP exists\.
+.P
+\fBdavid\fP Dependency badge linkind to david\-dm is always generated\.
+.P
+\fBcoveralls\fP Coverage badge linking to coveralls\.io is generated if \fBcoveralls\fP or \fBcoverage\fP scripts present\.
+.SH INSTALLATION
+.P
+Install globally through npm
+.P
+\fBnpm install \-g badgify\fP
+.SH BUGS
+.P
+Please report bugs at \fIhttps://github\.com/clux/badgify/issues\fR
