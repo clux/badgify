@@ -13,11 +13,13 @@
     "badge",
     "generate"
   ],
+  "man": "badgify.1",
   "main": "badgify.js",
   "bin": "badgify.js",
   "scripts": {
     "test": "nodeunit test/*.js --reporter=verbose",
-    "coverage": "jscoverage badgify.js && BADGIFY_COV=1 nodeunit --reporter=lcov test"
+    "coverage": "jscoverage badgify.js && BADGIFY_COV=1 nodeunit --reporter=lcov test",
+    "man": "marked-man manpage.md -o badgify.1"
   },
   "dependencies": {},
   "devDependencies": {

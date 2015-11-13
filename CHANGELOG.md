@@ -1,3 +1,7 @@
+1.2.0  / 2015-11-13
+===================
+  * Add manpage
+
 1.1.0  / 2015-11-11
 ===================
   * Allow `coverage` script to also be used for detecting coveralls
